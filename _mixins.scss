@@ -1,0 +1,18 @@
+@mixin flex-center($justify: space-around) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+
+@mixin transition($prop: all, $time: 0.5s) {
+  transition: $prop $time;
+}
+
+@mixin button-style {
+  display: inline-block;
+  background: $primary-color;
+  color: $light-color;
+  padding: 8px 30px;
+  border-radius: 30px;
+  @include transition(background);
+}

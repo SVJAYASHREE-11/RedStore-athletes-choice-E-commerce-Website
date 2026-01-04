@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+   
+        <div class="container">
+            <div class="navbar">
+                <div class ="logo">
+                    <img src="images/logo.png" width="90p">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="menutoogle()">
+            </div>
+            
+        </div>
+        <!---------- Contact Section ---------->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+
+        <h1 class="contact-heading">Contact Us</h1>
+        <p class="contact-intro">
+            We’d love to hear from you! Whether you have a question about our
+            products, orders, or need support, feel free to reach out to us.
+        </p>
+
+        <div class="contact-row">
+
+            <!-- Contact Info -->
+            <div class="contact-box">
+                <h3>Get in Touch</h3>
+                <p><i class="fa fa-map-marker"></i> RedStore, Chennai, India</p>
+                <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa fa-envelope"></i> support@redstore.com</p>
+                <p><i class="fa fa-clock-o"></i> Mon – Sat: 9:00 AM – 7:00 PM</p>
+            </div>
+
+           
+                <!-- Contact Form -->
+            <div class="contact-box">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" onsubmit="return validateForm()">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!--------footer----->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fotter-col-1">
+                    <h3>Downlaod Our App</h3>
+                    <p>Download App for Andriod and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Download on Play Store">
+                        <img src="images/app-store.png" alt="Download on App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" width="90p">
+                    <p>Our Purpose Is To Sustainable Make the Plesure and 
+                    Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupones</li>
+                        <li>Blog</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------js for toogle menu------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+        MenuItems.style.maxHeight="0px";
+        function menutoogle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight="200px"
+            }
+            else{
+                MenuItems.style.maxHeight="0px"
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

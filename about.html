@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+   
+        <div class="container">
+            <div class="navbar">
+                <div class ="logo">
+                    <img src="images/logo.png" width="90p">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" 
+                onclick="menutoogle()">
+            </div>
+            
+        </div>
+        <!---------- About Section ---------->
+<section class="about-section">
+    <div class="about-container">
+
+        <h1 class="about-heading">About RedStore</h1>
+
+        <p class="about-intro">
+            RedStore is a modern men’s fashion destination created for style,
+            comfort, and quality. Founded in 2023, RedStore brings together
+            premium clothing and accessories from multiple trusted brands,
+            all under one platform.
+        </p>
+
+        <div class="about-row">
+
+            <div class="about-box">
+                <h3>Our Story</h3>
+                <p>
+                    RedStore began with a vision to simplify men’s shopping.
+                    We wanted to create a store where customers can find
+                    fashionable, durable, and affordable products without
+                    compromising on quality.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>What We Offer</h3>
+                <p>
+                    We sell a wide range of men’s fashion essentials including
+                    T-shirts, trousers, shoes, watches, and socks. Our collection
+                    includes products from various well-known brands to suit
+                    every lifestyle and occasion.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Fabric & Quality</h3>
+                <p>
+                    Our products are made using premium fabrics such as soft
+                    cotton, breathable blends, durable denim, and skin-friendly
+                    materials. We ensure comfort, long-lasting wear, and modern
+                    design in every product.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to provide stylish, reliable, and affordable
+                    fashion for men. Customer satisfaction, authenticity, and
+                    quality remain the core values of RedStore.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!--------footer----->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="fotter-col-1">
+                    <h3>Downlaod Our App</h3>
+                    <p>Download App for Andriod and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Download on Play Store">
+                        <img src="images/app-store.png" alt="Download on App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" width="90p">
+                    <p>Our Purpose Is To Sustainable Make the Plesure and 
+                    Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupones</li>
+                        <li>Blog</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------js for toogle menu------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+        MenuItems.style.maxHeight="0px";
+        function menutoogle(){
+            if(MenuItems.style.maxHeight=="0px"){
+                MenuItems.style.maxHeight="200px"
+            }
+            else{
+                MenuItems.style.maxHeight="0px"
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
